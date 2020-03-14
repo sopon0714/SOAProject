@@ -149,74 +149,41 @@
 
     </div>
     <!-- End of Page Wrapper -->
-    <div id="modalAddStock" class="modal fade">
+    <div id="modalAddCategory" class="modal fade">
         <form class="modal-dialog modal-lg ">
             <div class="modal-content">
                 <div class="modal-header" style="background-color:#3E49BB">
                     <h4 class="modal-title" style="color:white">เพิ่มหมวดหมู่</h4>
                 </div>
+
+
+
+
+
                 <div class="modal-body" id="addModalBody">
-
-                    <div class="row">
-
-                        <div class="col-xl-8 col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header card-bg">
-                                    รายละเอียดสินค้า
-                                </div>
-                                <div class="card-body">
-                                    <div class="row mb-4">
-                                        <div class="col-xl-3 col-12 text-right">
-                                            <span>รหัสสินค้า</span>
-                                        </div>
-                                        <div class="col-xl-9 col-12">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-xl-3 col-12 text-right">
-                                            <span>รายการ</span>
-                                        </div>
-                                        <div class="col-xl-9 col-12">
-                                            <input type="text" class="form-control" id="firstname">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-4">
-                                        <div class="col-xl-3 col-12 text-right">
-                                            <span>หมวดหมู่</span>
-                                        </div>
-                                        <div class="col-xl-9 col-12">
-                                            <select class="form-control" id="cars">
-                                                <option value="volvo">เลือกหมวดหมู่</option>
-                                                <option value="volvo">ดอกไม้</option>
-                                                <option value="saab">ธงลายการ์ตูน</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-xl-3 col-12 text-right textreq">
-                                            <span>จำนวน:</span>
-                                        </div>
-                                        <div class="col-xl-9 col-12">
-                                            <td><input type="number" min="0" class="form-control" id="" name="" value=""></td>
-                                        </div>
-                                    </div>
-
-                                    <div class="row mb-4">
-                                        <div class="col-xl-3 col-12 text-right">
-                                            <span>ราคาสินค้า(บาท)</span>
-                                        </div>
-                                        <div class="col-xl-9 col-12">
-                                            <input type="text" class="form-control" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="row mb-4">
+                        <div class="col-xl-3 col-12 text-right">
+                            <span>หมวดหมู่ :</span>
+                        </div>
+                        <div class="col-xl-8 col-12">
+                            <input type="text" class="form-control" id="" name="" value="" placeholder="กรุณากรอกหมวดหมู่" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-xl-3 col-12 text-right">
+                            <span>จำนวน:</span>
+                        </div>
+                        <div class="col-xl-8 col-12">
+                            <td><input type="number" min="0" class="form-control" id="" name="" value=""></td>
                         </div>
                     </div>
 
 
-                    <input type="hidden" name="add">
+
+
+
+
+
 
                 </div>
                 <div class="modal-footer">

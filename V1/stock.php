@@ -129,7 +129,7 @@
 
 
 
-                                                            <button onclick="delfunction('สินค้า')" type='button' class="btn btn-danger btn-sm tt" title='ลบสินค้า'><i class="far fa-trash-alt"></i></button>
+                                                            <button onclick="del()" type='button' class="btn btn-danger btn-sm tt" title='ลบสินค้า'><i class="far fa-trash-alt"></i></button>
 
 
                                                         </td>
@@ -312,8 +312,7 @@
     //     });
     //     $('[data-toggle="tooltip"]').tooltip();
     // });
-
-    function delfunction(title) {
+    function del() {
 
         swal({
             title: "คุณต้องการลบ",
