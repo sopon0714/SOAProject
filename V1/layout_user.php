@@ -73,7 +73,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-ice-cream"></i>
+            <i class="fas fa-parachute-box"></i>
         </div>
         <div class="sidebar-brand-text mx-3">ร้านเช่าอุปกรณ์ตกแต่ง</div>
     </a>
@@ -85,7 +85,8 @@
     <li class="nav-item active">
         <a class="nav-link" href="home.php">
             <div style="text-align: center">
-                <i class="fas fa-shopping-cart"></i><br>
+                <i class="fas fa-home"></i>
+                <br>
                 <span>หน้าหลัก</span>
             </div>
         </a>
@@ -97,7 +98,7 @@
     <li class="nav-item active">
         <a class="nav-link" href="cart.php">
             <div style="text-align: center">
-                <i class="far fa-list-alt"></i><br>
+                <i class="fas fa-shopping-cart"></i><br>
                 <span>ทำรายการเช่าสินค้า</span>
             </div>
         </a>
@@ -115,16 +116,26 @@
     <li class="nav-item active">
         <a class="nav-link" href="categoryStock.php">
             <div style="text-align: center">
-                <i class="far fa-list-alt"></i><br>
+                <i class="fas fa-boxes"></i><br>
                 <span>หมวดหมู่สินค้า</span>
             </div>
         </a>
     </li>
+    <hr class="sidebar-divider">
     <li class="nav-item active">
         <a class="nav-link" href="stock.php">
             <div style="text-align: center">
-                <i class="far fa-list-alt"></i><br>
+                <i class="fas fa-archive"></i><br>
                 <span>รายการสินค้า</span>
+            </div>
+        </a>
+    </li>
+    <hr class="sidebar-divider">
+    <li class="nav-item active">
+        <a class="nav-link" href="stock.php">
+            <div style="text-align: center">
+                <i class="fas fa-camera"></i><br>
+                <span>ตากล้อง&สตูดิโอ</span>
             </div>
         </a>
     </li>

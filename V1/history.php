@@ -39,28 +39,12 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="font-weight-bold  text-uppercase mb-1">หมวดหมู่สินค้า
+                                            <div class="font-weight-bold  text-uppercase mb-1">รายการการเช่าทั้งหมด
                                             </div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">10 หมวดหมู่</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">2 รายการ</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-home fa-2x"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-12 mb-4">
-                            <div class="card border-left-primary card-color-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="font-weight-bold  text-uppercase mb-1">เพิ่มหมวดหมู่สินค้า</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">+1 หมวดหมู่</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="far fa-plus-square fa-2x"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -71,7 +55,7 @@
                     <!-- Content Row -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">หมวดหมู่ทั้งหมด</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">รายการทั้งหมด</h6>
 
                         </div>
 
@@ -85,16 +69,20 @@
                                                 <thead>
                                                     <tr>
                                                         <th>ลำดับ</th>
-                                                        <th>หมวดหมู่</th>
-                                                        <th>จำนวนที่มี</th>
+                                                        <th>วันที่</th>
+                                                        <th>หมายเลขคำสั่ง</th>
+                                                        <th>ราคา(บาท)</th>
+                                                        <th>รายละเอียด</th>
                                                         <th>จัดการ</th>
                                                     </tr>
                                                 </thead>
                                                 <tfoot>
                                                     <tr>
                                                         <th>ลำดับ</th>
-                                                        <th>หมวดหมู่</th>
-                                                        <th>จำนวนที่มี</th>
+                                                        <th>วันที่</th>
+                                                        <th>หมายเลขคำสั่ง</th>
+                                                        <th>ราคา(บาท)</th>
+                                                        <th>รายละเอียด</th>
                                                         <th>จัดการ</th>
                                                     </tr>
                                                 </tfoot>
@@ -102,8 +90,14 @@
 
                                                     <tr style="text-align:center;">
                                                         <td>1</td>
-                                                        <td>ดอกไม้</td>
-                                                        <td>20</td>
+                                                        <td>14/03/2563</td>
+                                                        <td>RD00001</td>
+                                                        <td>500</td>
+                                                        <td>
+                                                            <button type="button" id="btn_edit" class="btn btn-info btn-sm tt " title='แก้ไขหมวดหมู่'>
+                                                                <i class="fas fa-file-alt"></i>
+                                                            </button>
+                                                        </td>
                                                         <td>
                                                             <button type="button" id="btn_edit" class="btn btn-warning btn-sm tt " title='แก้ไขหมวดหมู่'>
                                                                 <i class="fas fa-edit"></i>
@@ -116,8 +110,14 @@
                                                     </tr>
                                                     <tr style="text-align:center;">
                                                         <td>2</td>
-                                                        <td>ธงลายการ์ตูน</td>
-                                                        <td>10</td>
+                                                        <td>10/03/2563</td>
+                                                        <td>RD00002</td>
+                                                        <td>1000</td>
+                                                        <td>
+                                                            <button type="button" id="btn_edit" class="btn btn-info btn-sm tt " title='แก้ไขหมวดหมู่'>
+                                                                <i class="fas fa-file-alt"></i>
+                                                            </button>
+                                                        </td>
                                                         <td>
                                                             <button type="button" id="btn_edit" class="btn btn-warning btn-sm tt " title='แก้ไขหมวดหมู่'>
                                                                 <i class="fas fa-edit"></i>
