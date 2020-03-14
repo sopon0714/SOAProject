@@ -1,30 +1,9 @@
 <?php
 require('./query.php');
 //session_start();
-function checkLogin($password): ?array
+function checkLogin($password)
 {
-    require("connect.php");
-    $stmt = $con->query("SELECT * FROM `db_user` WHERE `password` = '$password'");
-    //        if ($username != "admin" || $password != "admin")
-    if ($stmt->rowCount() == 0) {
-        header("Location: index.php?error=กรอกข้อมูลไม่ถูกต้อง2!");
-        return null;
-    }
-    //        else if($username == "admin" && $password == "admin")
-    else if ($stmt->rowCount() != 0) {
-        //$_SESSION['username'] = $username;
-        $_SESSION['password'] = $password;
-        while ($member = $stmt->fetch(PDO::FETCH_OBJ)) {
-            $login = array('username' => $member->username, 'name' => $member->name, 'surname' => $member->surname, 'is_admin' => $member->is_admin, 'UID' => $member->UID);
-        }
-        $_SESSION['login'] = $login;
-        if ($login['is_admin'] == 1) {
-            header("Location: admin.php");
-        } else {
-            header("Location: cart.php");
-        }
-    }
-    return null;
+    header("Location: cart.php");
 }
 
 function getProducts(): array
@@ -190,7 +169,7 @@ function PaySelf()
             <td style="border: 0 "><?= $_SESSION['tpay']; ?></td>
         </tr>
     </table>
-<?php }
+    <?php }
 
 //ฟังก์ชันงาน soa
 
@@ -209,7 +188,7 @@ function table2(array $products_list, int $column, $border = 1, $cellpadding = 1
                 <td><input type="number" name="total[<?php echo $k ?>]" value="0" min="0" max="100"></td>
                 <td><input type="text" name="note"><br></td>
             </tr>
-            <?php $i++;
+<?php $i++;
         }
     }
 }
