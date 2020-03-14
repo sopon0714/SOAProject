@@ -84,22 +84,24 @@
                                                 <thead>
                                                     <tr>
                                                         <th>ลำดับ</th>
-                                                        <td>รูปสินค้า</td>
+                                                        <td>ภาพสินค้า</td>
                                                         <th>หมวดหมู่</th>
+                                                        <th>รหัสสินค้า</th>
                                                         <th>รายการ</th>
                                                         <th>จำนวน</th>
-                                                        <th>ราคาชิ้นละ(บาท)</th>
+                                                        <th>ราคาชิ้นละ(บาท)ต่อวัน</th>
                                                         <th>จัดการ</th>
                                                     </tr>
                                                 </thead>
                                                 <tfoot>
                                                     <tr>
                                                         <th>ลำดับ</th>
-                                                        <td>รูปสินค้า</td>
+                                                        <td>ภาพสินค้า</td>
                                                         <th>หมวดหมู่</th>
+                                                        <th>รหัสสินค้า</th>
                                                         <th>รายการ</th>
                                                         <th>จำนวน</th>
-                                                        <th>ราคาชิ้นละ(บาท)</th>
+                                                        <th>ราคาชิ้นละ(บาท)ต่อวัน</th>
                                                         <th>จัดการ</th>
                                                     </tr>
                                                 </tfoot>
@@ -107,8 +109,13 @@
 
                                                     <tr style="text-align:center;">
                                                         <td>1</td>
-
+                                                        <td>
+                                                            <div class="product-image">
+                                                                <img src="./img/mali.jpg" width="100" height="100" alt=images>
+                                                            </div>
+                                                        </td>
                                                         <td>ดอกไม้</td>
+                                                        <td>001233</td>
                                                         <td>ดอกมะลิ</td>
                                                         <td>50</td>
                                                         <td>5</td>
@@ -124,7 +131,13 @@
                                                     </tr>
                                                     <tr style="text-align:center;">
                                                         <td>2</td>
+                                                        <td>
+                                                            <div class="product-image">
+                                                                <img src="./img/Princess.jpg" width="100" height="100" alt=images>
+                                                            </div>
+                                                        </td>
                                                         <td>ธงลายการ์ตูน</td>
+                                                        <td>00223</td>
                                                         <td>ธงลายเจ้าหญิง</td>
                                                         <td>20</td>
                                                         <td>15</td>
