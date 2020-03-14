@@ -75,7 +75,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-ice-cream"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Sweet<sup>Home</sup></div>
+        <div class="sidebar-brand-text mx-3">ร้านเช่าอุปกรณ์ตกแต่ง</div>
     </a>
 
     <!-- Divider -->
@@ -83,10 +83,10 @@
 
     <!-- Nav Item - Order -->
     <li class="nav-item active">
-        <a class="nav-link" href="cart.php">
+        <a class="nav-link" href="home.php">
             <div style="text-align: center">
                 <i class="fas fa-shopping-cart"></i><br>
-                <span>Order</span>
+                <span>หน้าหลัก</span>
             </div>
         </a>
     </li>
@@ -95,13 +95,38 @@
 
     <!-- Nav Item - Detail order -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.php">
+        <a class="nav-link" href="cart.php">
             <div style="text-align: center">
                 <i class="far fa-list-alt"></i><br>
-                <span>Detail order</span>
+                <span>ทำรายการเช่าสินค้า</span>
             </div>
         </a>
-
+    </li>
+    <hr class="sidebar-divider">
+    <li class="nav-item active">
+        <a class="nav-link" href="history.php">
+            <div style="text-align: center">
+                <i class="far fa-list-alt"></i><br>
+                <span>ประวัติการเช่าสินค้า</span>
+            </div>
+        </a>
+    </li>
+    <hr class="sidebar-divider">
+    <li class="nav-item active">
+        <a class="nav-link" href="categoryStock.php">
+            <div style="text-align: center">
+                <i class="far fa-list-alt"></i><br>
+                <span>หมวดหมู่สินค้า</span>
+            </div>
+        </a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="stock.php">
+            <div style="text-align: center">
+                <i class="far fa-list-alt"></i><br>
+                <span>รายการสินค้า</span>
+            </div>
+        </a>
     </li>
     <!-- Divider -->
     <hr class="sidebar-divider">
