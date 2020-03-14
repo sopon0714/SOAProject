@@ -96,9 +96,9 @@
                 <br/><br/>
                 <a href="./check.php"><button>Submit</button></a>
                 <br/><br/><br/>
-                <label for="cars">หมวดหมู่สินค้า : </label>
+                <label for="category">หมวดหมู่สินค้า : </label>
 
-                <select id="cars">
+                <select id="category">
                     <option value="a">ดอกไม้ประดับ</option>
                     <option value="b">ของตกแต่งภายในอาคาร</option>
                     <option value="c">ของตกแต่งภายนอกอาคาร</option>
