@@ -173,22 +173,19 @@ function PaySelf()
 
 //ฟังก์ชันงาน soa
 
-function table2(array $products_list, int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
+function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
 {
     if ($column == 4) {
-        $total[] = [];
-
-        $i = 1;
         //$countTotal = 0;
-        foreach ($products_list as $k => $v) { ?>
+        ?>
             <tr>
-                <td><?php echo $i; ?></td>
-                <td><?php echo $k; ?></td>
-                <td><?php echo $v; ?></td>
-                <td><input type="number" name="total[<?php echo $k ?>]" value="0" min="0" max="100"></td>
-                <td><input type="text" name="note"><br></td>
+                <td><?php echo "1"; ?></td>
+                <td><?php echo "<img src=\"./img/a.jpg\" width= \"70\" height=\"80\" >" ?></td>
+                <td><?php echo "000123"; ?></td>
+                <td><?php echo "ดอกไม้"; ?></td>
+                <td><?php echo "2"; ?></td>
             </tr>
-<?php $i++;
+        <?php 
         }
     }
-}
+

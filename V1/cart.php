@@ -55,7 +55,7 @@
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">Sweet Home</h6>
             </div>
-            <form action="check.php" method="POST">
+            <form action="bill.php" method="POST">
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -64,35 +64,38 @@
                         <col  width="100">
                         <col  width="100">
                         <col  width="100">
-                        <col  width="100">
                   </colgroup>
                   <thead>
                     <tr>
                       <th>ลำดับ</th>
+                      <th>ภาพสินค้า</th>
                       <th>รหัสสินค้า</th>
                       <th>รายการ</th>
                       <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
-                      <th>หมายเหตุ</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                       <th>ลำดับ</th>
+                      <th>ภาพสินค้า</th>
                       <th>รหัสสินค้า</th>
                       <th>รายการ</th>
                       <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
-                      <th>หมายเหตุ</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <?php
-                    getProducts();
-                    $products_list = getProducts();
+                    //getProducts();
+                    //$products_list = getProducts();
                     //@var_dump($products_list);
-                    table2($products_list, 4);
+                    table2(4);
                     ?>
                   </tbody>
                 </table>
+                <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
+                <br/><br/>
+                <a href="./check.php"><button>Submit</button></a>
+                <br/><br/><br/>
                 <label for="cars">หมวดหมู่สินค้า : </label>
 
                 <select id="cars">
@@ -102,10 +105,31 @@
                 </select>
               </div>
             </div>
-            <br /> <br />
-            <a href="./check.php"><button>Check</button></a>
-            <input type="reset" value="Cancel" onclick="window.location = 'cart.php'">
+            
+            <br/><br/>
+            
           </form>
+
+            <div id="product-grid">
+                <div class="txt-heading"><h2>Products<h2></div>
+
+                <div class="product-item">
+                  <form>
+                      <div class="product-image">
+                          <img src="./img/a.jpg" width= "220" height="230" alt=images>
+                      </div>
+                      <div class="product-title-footer">
+                          <div class="product-title">vase</div>
+                          <div class="product-title">950 บาท</div>
+                          <div class="cart-action">
+                              <input type="number"class="product-quantity" id="quantity" name="quantity" min="0" max="100" name="quantity" value="1" size="2">
+                              <input type="submit" value="Add to cart" class="btnAddAction">
+                          </div>
+                      </div>
+                  </form>
+                </div>
+            </div>
+
           </div>
         </div>
         <!-- /.container-fluid -->
