@@ -176,7 +176,6 @@ function PaySelf()
 function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
 {
     if ($column == 4) {
-        //$countTotal = 0;
         ?>
             <tr>
                 <td><?php echo "1"; ?></td>
@@ -186,6 +185,33 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
                 <td><?php echo "2"; ?></td>
             </tr>
         <?php 
-        }
     }
+    if ($column == 5) {
+        ?>
+            <tr>
+                <td><?php echo "1"; ?></td>
+                <td><?php echo "000001"; ?></td>
+                <td><?php echo "แจกัน</br>"."ดอกไม้</br>"."ผ้าม่าน</br>"; ?></td>
+                <td><?php echo "1050"; ?></td>
+                <td><input type="number"class="product-quantity" id="quantity" name="quantity" min="0" max="100" name="quantity" value="1" size="2"></td>
+                <td><input type="text" name="note"><br/></td>
+            </tr>
+        <?php 
+    }
+    if ($column == 6) {
+        ?>
+            <tr>
+                <td><?php echo "1"; ?></td>
+                <td><?php echo "000001"; ?></td>
+                <td><?php echo "นายคาเดี้ยน คาเมร่า"; ?></td>
+                <td><?php echo "ครึ่งวัน 1200</br>"."เต็มวัน 2000</br>"; ?></td>
+                <td><select id="photographerprice">
+                    <option value="a">ครึ่งวัน</option>
+                    <option value="b">เต็มวัน</option>
+                </select></td> 
+                <td><input type="date" id="myDate" name="myDate" value=""></td>
+            </tr>
+        <?php 
+    }
+}
 

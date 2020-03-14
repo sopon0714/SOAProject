@@ -3,7 +3,7 @@
 
 <head>
   <?php include "link.php"?>
-<title>Bill</title>
+<title>Photographer</title>
 </head>
 
 <body id="page-top">
@@ -28,7 +28,7 @@
 
             <!-- Page Heading -->
             <div bgcolor= “green” class="d-sm-flex align-items-center justify-content-between mb-4">
-              <h1 class="h3 mb-0 text-gray-800">สินค้าทั้งหมดที่ลูกค้าต้องการ</h1>
+              <h1 class="h3 mb-0 text-gray-800">Product & Photographer</h1>
             </div>
 
        <!-- ตัวอย่างและตำแหน่งของ card -->
@@ -53,32 +53,9 @@
             <!-- Content Row -->
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">โปรดกรอกข้อมูล</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Product & Photographer</h6>
             </div>
-            <div id="product-grid">
-                <!-- <div class="txt-heading"><h3>ข้อมูลการเช่าสินค้า<h3></div><br/> -->
-                <div class="customer-data">
-                  <form>
-                          <!-- <div class="customer-title">โปรดกรอกข้อมูล</div><br/> -->
-                          <div class="bill-action">
-                                <label for="name">ชื่อ-สกุล : </label>
-                                <input type="text" name="name"><br/>
-                                <label for="day">วันที่เช่าสินค้า : </label>
-                                <input type="date" id="myDate" name="myDate" value=""><br/>
-                                <label for="day">ระยะเวลาการเช่าสินค้า : </label>
-                                <input type="number"class="customer-day" id="day" name="day" min="1" max="30" name="quantity" value="1" size="2"><br/>
-                                <label for="day">เบอร์โทร : </label>
-                                <input type="text" name="tel"><br/>
-                                <label for="day">e-mail : </label>
-                                <input type="text" name="e-mail"><br/>
-                                <input type="submit" value="submit" class="btnAddAction">
-                          </div>
-                      
-                  </form>
-                </div>
-            </div>
-
-            <form action="bill.php" method="POST">
+            <form action="billPhoto.php" method="POST">
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -87,23 +64,27 @@
                         <col  width="100">
                         <col  width="100">
                         <col  width="100">
+                        <col  width="100">
+                        <col  width="100">
                   </colgroup>
                   <thead>
                     <tr>
                       <th>ลำดับ</th>
-                      <th>ภาพสินค้า</th>
                       <th>รหัสสินค้า</th>
-                      <th>รายการ</th>
-                      <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
+                      <th>สินค้า</th>
+                      <th>ราคา/set</th>
+                      <th>จำนวน (set)</th>
+                      <th>หมายเหตุ</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                       <th>ลำดับ</th>
-                      <th>ภาพสินค้า</th>
                       <th>รหัสสินค้า</th>
-                      <th>รายการ</th>
-                      <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
+                      <th>สินค้า</th>
+                      <th>ราคา/set</th>
+                      <th>จำนวน (set)</th>
+                      <th>หมายเหตุ</th>
                     </tr>
                   </tfoot>
                   <tbody>
@@ -111,20 +92,62 @@
                     //getProducts();
                     //$products_list = getProducts();
                     //@var_dump($products_list);
-                    table2(4);
+                    table2(5);
                     ?>
                   </tbody>
                 </table>
-                <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
-                <br/><br/>
               </div>
             </div>
             
             <br/><br/>
             
-          </form>
-
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <colgroup>
+                        <col  width="100">
+                        <col  width="100">
+                        <col  width="100">
+                        <col  width="100">
+                        <col  width="100">
+                        <col  width="100">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ลำดับ</th>
+                      <th>รหัสช่างภาพ</th>
+                      <th>ช่างภาพ</th>
+                      <th>เรทราคา</th>
+                      <th>ระยะเวลาการจ้างงาน</th>
+                      <th>วันที่ต้องการถ่ายภาพ</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th>ลำดับ</th>
+                      <th>รหัสช่างภาพ</th>
+                      <th>ช่างภาพ</th>
+                      <th>เรทราคา</th>
+                      <th>ระยะเวลาการจ้างงาน</th>
+                      <th>วันที่ต้องการถ่ายภาพ</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <?php
+                    //getProducts();
+                    //$products_list = getProducts();
+                    //@var_dump($products_list);
+                    table2(6);
+                    ?>
+                  </tbody>
+                </table>
+                <br/><br/>
+                <a href="./check.php"><button>Submit</button></a>
+              </div>
+            </div>
             
+            <br/><br/>
+          </form>
 
           </div>
         </div>
