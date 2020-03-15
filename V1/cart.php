@@ -27,6 +27,9 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
+          <div bgcolor=“green” class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Cart</h1>
+          </div>
 
           <!-- ตัวอย่างและตำแหน่งของ card -->
           <!-- <div class="row">
@@ -55,8 +58,14 @@
             <form action="bill.php" method="POST">
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <!-- <colgroup>
+                      <col width="100">
+                      <col width="100">
+                      <col width="100">
+                      <col width="50">
+                    </colgroup> -->
                     <thead>
                       <tr>
                         <th>ลำดับ</th>
@@ -66,7 +75,15 @@
                         <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
                       </tr>
                     </thead>
-
+                    <tfoot>
+                      <tr>
+                        <th>ลำดับ</th>
+                        <th>ภาพสินค้า</th>
+                        <th>รหัสสินค้า</th>
+                        <th>รายการ</th>
+                        <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
+                      </tr>
+                    </tfoot>
                     <tbody>
                       <?php
                       //getProducts();
@@ -77,44 +94,29 @@
                     </tbody>
                   </table>
                   <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
-                  <span>
-                    <a href=" ./bill.php">
-                      <button type="button" id="btn_green" class="btn btn-success">
-                        ยืนยัน
-                      </button>
-                    </a>
-                  </span>
+                  <!-- <br /><br /> -->
+                  <a href="./check.php"><button>Submit</button></a>
+                  <br /><br /><br />
+                  <label for="category">หมวดหมู่สินค้า : </label>
 
+                  <select id="category">
+                    <option value="a">ดอกไม้ประดับ</option>
+                    <option value="b">ของตกแต่งภายในอาคาร</option>
+                    <option value="c">ของตกแต่งภายนอกอาคาร</option>
+                  </select>
                 </div>
               </div>
-            </form>
-          </div>
 
+              <br /><br />
 
-
-          <div class="card shadow mb-4">
-            <div class="card">
-              <div class="card-header card-bg ">
-                <span class="m-0 font-weight-bold text-primary">สินค้า</span>
-              </div>
-            </div>
-            <div class="card-body">
-              <label for="category" style="font-size: 20px">หมวดหมู่สินค้า : </label>
-
-              <select id="category">
-                <option value="a">ดอกไม้ประดับ</option>
-                <option value="b">ของตกแต่งภายในอาคาร</option>
-                <option value="c">ของตกแต่งภายนอกอาคาร</option>
-              </select>
-            </div>
             </form>
 
             <div id="product-grid">
-              <div class="txt-heading">
+              <div class="txt-heading" style="text-align:center;">
                 <h2>Products<h2>
               </div>
 
-              <div class="product-item">
+              <div class="product-item" style="text-align:center;">
                 <form>
                   <div class="product-image">
                     <img src="./img/a.jpg" width="220" height="230" alt=images>
