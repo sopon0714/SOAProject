@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-  <?php include "link.php"?>
-<title>Sweet Home</title>
+  <?php include "link.php" ?>
+  <title>Sweet Home</title>
 </head>
 
 <body id="page-top">
-  <div id="wrapper" >
+  <div id="wrapper">
 
     <!-- อันนี้ไว้เรียกใช้แท็บข้างๆๆ -->
-      <?php include "layout_user.php" ?>
-      <?php include "helper_func.inc.php" ?>
+    <?php include "layout_user.php" ?>
+    <?php include "helper_func.inc.php" ?>
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
-      <div id="content" >
+      <div id="content">
 
         <!-- อันนี้ไว้เรียกใช้แท็บบน -->
         <?php include "Topbar.php" ?>
@@ -26,13 +26,10 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-            <!-- Page Heading -->
-            <div bgcolor= “green” class="d-sm-flex align-items-center justify-content-between mb-4">
-              <h1 class="h3 mb-0 text-gray-800">Cart</h1>
-            </div>
+          <!-- Page Heading -->
 
-       <!-- ตัวอย่างและตำแหน่งของ card -->
-            <!-- <div class="row">
+          <!-- ตัวอย่างและตำแหน่งของ card -->
+          <!-- <div class="row">
               <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                   <div class="card-body">
@@ -50,96 +47,106 @@
               </div>
             </div> -->
 
-            <!-- Content Row -->
-            <div class="card shadow mb-4">
+          <!-- Content Row -->
+          <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Sweet Home</h6>
+              <h6 class="m-0 font-weight-bold text-primary">ทำรายการเช่าสินค้า</h6>
             </div>
             <form action="bill.php" method="POST">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <colgroup>
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>ลำดับ</th>
-                      <th>ภาพสินค้า</th>
-                      <th>รหัสสินค้า</th>
-                      <th>รายการ</th>
-                      <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                    <tr>
-                      <th>ลำดับ</th>
-                      <th>ภาพสินค้า</th>
-                      <th>รหัสสินค้า</th>
-                      <th>รายการ</th>
-                      <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
-                    <?php
-                    //getProducts();
-                    //$products_list = getProducts();
-                    //@var_dump($products_list);
-                    table2(4);
-                    ?>
-                  </tbody>
-                </table>
-                <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
-                <br/><br/>
-                <a href="./check.php"><button>Submit</button></a>
-                <br/><br/><br/>
-                <label for="category">หมวดหมู่สินค้า : </label>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 
-                <select id="category">
-                    <option value="a">ดอกไม้ประดับ</option>
-                    <option value="b">ของตกแต่งภายในอาคาร</option>
-                    <option value="c">ของตกแต่งภายนอกอาคาร</option>
-                </select>
+                    <thead>
+                      <tr>
+                        <th>ลำดับ</th>
+                        <th>ภาพสินค้า</th>
+                        <th>รหัสสินค้า</th>
+                        <th>รายการ</th>
+                        <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <?php
+                      //getProducts();
+                      //$products_list = getProducts();
+                      //@var_dump($products_list);
+                      table2(4);
+                      ?>
+                    </tbody>
+                  </table>
+                  <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
+                  <span>
+                    <a href=" ./bill.php">
+                      <button type="button" id="btn_green" class="btn btn-success">
+                        ตกลง
+                      </button>
+                    </a>
+                  </span>
+
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+
+          <div class="card shadow mb-4">
+            <div class="card">
+              <div class="card-header card-bg ">
+                <span class="m-0 font-weight-bold text-primary">สินค้า</span>
               </div>
             </div>
-            
-            <br/><br/>
-            
-          </form>
+            <div class="card-body">
+              <label for="category" style="font-size: 20px">หมวดหมู่สินค้า : </label>
 
-            <div id="product-grid">
-                <div class="txt-heading"><h2>Products<h2></div>
-
-                <div class="product-item">
-                  <form>
-                      <div class="product-image">
-                          <img src="./img/a.jpg" width= "220" height="230" alt=images>
-                      </div>
-                      <div class="product-title-footer">
-                          <div class="product-title">vase</div>
-                          <div class="product-title">950 บาท</div>
-                          <div class="cart-action">
-                              <input type="number"class="product-quantity" id="quantity" name="quantity" min="0" max="100" name="quantity" value="1" size="2">
-                              <input type="submit" value="Add to cart" class="btnAddAction">
-                          </div>
-                      </div>
-                  </form>
-                </div>
+              <select id="category">
+                <option value="a">ดอกไม้ประดับ</option>
+                <option value="b">ของตกแต่งภายในอาคาร</option>
+                <option value="c">ของตกแต่งภายนอกอาคาร</option>
+              </select>
             </div>
 
+
+            <br /><br />
+
+            </form>
+
+            <div id="product-grid">
+              <div class="txt-heading">
+                <h2>Products<h2>
+              </div>
+
+              <div class="product-item">
+                <form>
+                  <div class="product-image">
+                    <img src="./img/a.jpg" width="220" height="230" alt=images>
+                  </div>
+                  <div class="product-title-footer">
+                    <div class="product-title">vase</div>
+                    <div class="product-title">950 บาท</div>
+                    <div class="cart-action">
+                      <input type="number" class="product-quantity" id="quantity" name="quantity" min="0" max="100" name="quantity" value="1" size="2">
+                      <input type="submit" value="Add to cart" class="btnAddAction">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- /.container-fluid -->
 
       </div>
-      <!-- End of Main Content -->
-
-
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- End of Main Content -->
+
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->
@@ -149,8 +156,8 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-  
- 
+
+
 </body>
 
 </html>
