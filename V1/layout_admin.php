@@ -1,3 +1,4 @@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <style>
   body {
     margin: 0 auto;
@@ -73,7 +74,7 @@
   <!-- Sidebar - Brand -->
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
     <div class="sidebar-brand-icon rotate-n-15">
-    <i class="fas fa-ice-cream"></i>
+      <i class="fas fa-ice-cream"></i>
     </div>
     <div class="sidebar-brand-text mx-3">Sweet<sup>Home</sup></div>
   </a>
@@ -110,7 +111,7 @@
   <li class="nav-item active">
     <a class="nav-link" href="index.php">
       <div style="text-align: center">
-          <i class="fas fa-truck"></i><br>
+        <i class="fas fa-truck"></i><br>
         <span>Outstanding orders</span>
       </div>
     </a>
@@ -134,6 +135,6 @@
         </div>
       </li> -->
   <!-- Sidebar Toggler (Sidebar) -->
-  
+
 
 </ul>
