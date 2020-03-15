@@ -58,76 +58,79 @@
             <div id="product-grid">
               <!-- <div class="txt-heading"><h3>ข้อมูลการเช่าสินค้า<h3></div><br/> -->
               <div class="customer-data">
-                <form>
-                  <!-- <div class="customer-title">โปรดกรอกข้อมูล</div><br/> -->
-                  <div class="modal-body" id="addModalBody">
-                    <div class="container">
-                      <div class="row mb-3">
-                        <div class="col-xl-4 col-2 text-right ">
-                          <label for="name">ชื่อ-สกุล : </label>
-                        </div>
-                        <div class="col-xl-6 col-6 ">
-                          <input type="text" name="name">
-                        </div>
+
+                <!-- <div class="customer-title">โปรดกรอกข้อมูล</div><br/> -->
+                <div class="modal-body" id="addModalBody">
+                  <div class="container">
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="name">ชื่อ-สกุล : </label>
                       </div>
-                      <div class="row mb-3">
-                        <div class="col-xl-4 col-2 text-right ">
-                          <label for="day">วันที่เช่าสินค้า : </label>
-                        </div>
-                        <div class="col-xl-6 col-6 ">
-                          <input type="date" id="myDate" name="myDate" value="">
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-xl-4 col-2 text-right ">
-                          <label for="day">ระยะเวลาการเช่าสินค้า : </label>
-                        </div>
-                        <div class="col-xl-6 col-6 ">
-                          <input type="number" class="customer-day" id="day" name="day" min="1" max="30" name="quantity" value="1" size="2">
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-xl-4 col-2 text-right ">
-                          <label for="day">เบอร์โทร : </label>
-                        </div>
-                        <div class="col-xl-6 col-6 ">
-                          <input type="text" name="tel">
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-xl-4 col-2 text-right ">
-                          <label for="day">e-mail : </label>
-                        </div>
-                        <div class="col-xl-6 col-6 ">
-                          <input type="text" name="e-mail">
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col align-self-center">
-                          <span>
-                            <a href=" ./cart.php">
-                              <button type="button" id="btn_green" class="btn btn-success">
-                                ยืนยัน
-                              </button>
-                            </a>
-                          </span>
-                        </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="text" name="name">
                       </div>
                     </div>
-                </form>
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="day">วันที่เช่าสินค้า : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="date" id="myDate" name="myDate" value="">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="day">ระยะเวลาการเช่าสินค้า : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="number" class="customer-day" id="day" name="day" min="1" max="30" name="quantity" value="1" size="2">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="day">เบอร์โทร : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="text" name="tel">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="day">e-mail : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="text" name="e-mail">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-5 col-2 text-right ">
+                        <span>
+                          <a href=" ./cart.php">
+                            <button type="button" id="btn_green" class="btn btn-success">
+                              ยืนยัน
+                            </button>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
+          </div>
 
+
+          <div class="card shadow mb-4">
+            <div class="card">
+              <div class="card-header card-bg ">
+                <span class="m-0 font-weight-bold text-primary">สรุปรายการ</span>
+              </div>
+            </div>
             <form action="bill.php" method="POST">
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                    <colgroup>
-                      <col width="100">
-                      <col width="100">
-                      <col width="100">
-                      <col width="100">
-                    </colgroup>
                     <thead>
                       <tr>
                         <th>ลำดับ</th>
@@ -156,26 +159,20 @@
                     </tbody>
                   </table>
                   <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
-                  <br /><br />
                 </div>
               </div>
-
-              <br /><br />
-
             </form>
-
-
-
           </div>
         </div>
-        <!-- /.container-fluid -->
-
       </div>
-      <!-- End of Main Content -->
-
+      <!-- /.container-fluid -->
 
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- End of Main Content -->
+
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->
