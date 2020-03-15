@@ -105,7 +105,7 @@
                                                         <td>ดอกไม้</td>
                                                         <td>20</td>
                                                         <td>
-                                                            <button type="button" id="btn_edit" class="btn btn-warning btn-sm tt " title='แก้ไขหมวดหมู่'>
+                                                            <button type="button" id="editCategory" class="btn btn-warning btn-sm tt " title='แก้ไขหมวดหมู่'>
                                                                 <i class="fas fa-edit"></i>
                                                             </button>
                                                             <button type="button" id="btn_alt" class="btn btn-danger btn-sm tt " title='ลบหมวดหมู่'>
@@ -193,7 +193,50 @@
             </div>
         </form>
     </div>
+    <div id="modalEditCategory" class="modal fade">
+        <form class="modal-dialog modal-lg ">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#3E49BB">
+                    <h4 class="modal-title" style="color:white">แก้ไขหมวดหมู่</h4>
+                </div>
 
+
+
+
+
+                <div class="modal-body" id="addModalBody">
+                    <div class="row mb-4">
+                        <div class="col-xl-3 col-12 text-right">
+                            <span>หมวดหมู่ :</span>
+                        </div>
+                        <div class="col-xl-8 col-12">
+                            <input type="text" class="form-control" id="" name="" value="" placeholder="ดอกไม้" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-xl-3 col-12 text-right">
+                            <span>จำนวน:</span>
+                        </div>
+                        <div class="col-xl-8 col-12">
+                            <td><input type="number" min="0" class="form-control" id="" name="" value="" placeholder="20"></td>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" type="submit">บันทึก</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
+                </div>
+            </div>
+        </form>
+    </div>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
@@ -210,8 +253,8 @@
         $('.tt').tooltip({
             trigger: "hover"
         });
-        $(".btndel").on('click', function() {
-
+        $('#editCategory').click(function() {
+            $("#modalEditCategory").modal();
         });
     });
     $(document).ready(function() {
