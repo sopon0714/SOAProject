@@ -19,12 +19,6 @@ function getProducts(): array
 }
 function calculateTotalPrice(array $products_list, array $total, array  &$tal): array
 {
-
-
-
-
-
-
     $i = 0;
     $all = [];
     $tal['sum'] = 0;
@@ -193,7 +187,7 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
                 <td><?php echo "000001"; ?></td>
                 <td><?php echo "แจกัน</br>"."ดอกไม้</br>"."ผ้าม่าน</br>"; ?></td>
                 <td><?php echo "1050"; ?></td>
-                <td><input type="number"class="product-quantity" id="quantity" name="quantity" min="0" max="100" name="quantity" value="1" size="2"></td>
+                <td><input type="number"class="product-quantity" id="quantity" name="quantity" min="0" max="100" name="quantity" value="0" size="2"></td>
                 <td><input type="text" name="note"><br/></td>
             </tr>
         <?php 
@@ -210,6 +204,30 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
                     <option value="b">เต็มวัน</option>
                 </select></td> 
                 <td><input type="date" id="myDate" name="myDate" value=""></td>
+            </tr>
+        <?php 
+    }
+    if ($column == 7) {
+        ?>
+            <tr>
+            <td><?php echo "1"; ?></td>
+                <td><?php echo "000001"; ?></td>
+                <td><?php echo "แจกัน</br>"."ดอกไม้</br>"."ผ้าม่าน</br>"; ?></td>
+                <td><?php echo "1050"; ?></td>
+                <td><input type="number"class="product-quantity" id="quantity" name="quantity" min="0" max="100" name="quantity" value="0" size="2"></td>
+                <td><input type="text" name="note"><br/></td>
+            </tr>
+        <?php 
+    }
+    if ($column == 8) {
+        ?>
+            <tr>
+                <td><?php echo "1"; ?></td>
+                <td><?php echo "000001"; ?></td>
+                <td><?php echo "ต้มยำกุ้ง"; ?></td>
+                <td><?php echo "350"; ?></td>
+                <td><input type="number"class="product-quantity" id="quantity" name="quantity" min="0" max="100" name="quantity" value="0" size="2"></td>
+                <td><input type="text" name="note"><br/></td>
             </tr>
         <?php 
     }

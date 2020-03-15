@@ -53,7 +53,7 @@
           <!-- Content Row -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Sweet Home</h6>
+              <h6 class="m-0 font-weight-bold text-primary">ทำรายการเช่าสินค้า</h6>
             </div>
             <form action="bill.php" method="POST">
               <div class="card-body">
@@ -132,17 +132,19 @@
                 </form>
               </div>
             </div>
-
           </div>
         </div>
-        <!-- /.container-fluid -->
 
       </div>
-      <!-- End of Main Content -->
-
-
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- End of Main Content -->
+
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->

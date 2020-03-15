@@ -86,7 +86,6 @@
         <a class="nav-link" href="home.php">
             <div style="text-align: center">
                 <i class="fas fa-home"></i>
-                <br>
                 <span>หน้าหลัก</span>
             </div>
         </a>
@@ -98,7 +97,7 @@
     <li class="nav-item active">
         <a class="nav-link" href="cart.php">
             <div style="text-align: center">
-                <i class="fas fa-shopping-cart"></i><br>
+                <i class="fas fa-shopping-cart"></i>
                 <span>ทำรายการเช่าสินค้า</span>
             </div>
         </a>
@@ -107,7 +106,7 @@
     <li class="nav-item active">
         <a class="nav-link" href="history.php">
             <div style="text-align: center">
-                <i class="far fa-list-alt"></i><br>
+                <i class="far fa-list-alt"></i>
                 <span>ประวัติการเช่าสินค้า</span>
             </div>
         </a>
@@ -116,7 +115,7 @@
     <li class="nav-item active">
         <a class="nav-link" href="categoryStock.php">
             <div style="text-align: center">
-                <i class="fas fa-boxes"></i><br>
+                <i class="fas fa-boxes"></i>
                 <span>หมวดหมู่สินค้า</span>
             </div>
         </a>
@@ -125,17 +124,26 @@
     <li class="nav-item active">
         <a class="nav-link" href="stock.php">
             <div style="text-align: center">
-                <i class="fas fa-archive"></i><br>
+                <i class="fas fa-archive"></i>
                 <span>รายการสินค้า</span>
             </div>
         </a>
     </li>
     <hr class="sidebar-divider">
     <li class="nav-item active">
-        <a class="nav-link" href="stock.php">
+        <a class="nav-link" href="food.php">
             <div style="text-align: center">
-                <i class="fas fa-camera"></i><br>
-                <span>ตากล้อง&สตูดิโอ</span>
+                <i class="fas fa-utensils"></i>
+                <span>สินค้า&อาหาร</span>
+            </div>
+        </a>
+    </li>
+    <hr class="sidebar-divider">
+    <li class="nav-item active">
+        <a class="nav-link" href="photographer.php">
+            <div style="text-align: center">
+                <i class="fas fa-camera"></i>
+                <span>สินค้า&ช่างภาพ</span>
             </div>
         </a>
     </li>

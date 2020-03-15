@@ -7,7 +7,7 @@
 </head>
 
 <body id="page-top">
-  <?php print_r($_POST['total']) ?>
+  <!-- <?php print_r($_POST['total']) ?> -->
   <div id="wrapper">
 
     <!-- อันนี้ไว้เรียกใช้แท็บข้างๆๆ -->

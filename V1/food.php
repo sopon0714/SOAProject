@@ -3,7 +3,7 @@
 
 <head>
   <?php include "link.php"?>
-<title>Photographer</title>
+<title>Food</title>
 </head>
 
 <body id="page-top">
@@ -28,7 +28,7 @@
 
             <!-- Page Heading -->
             <div bgcolor= “green” class="d-sm-flex align-items-center justify-content-between mb-4">
-              <h1 class="h3 mb-0 text-gray-800">Product & Photographer</h1>
+              <h1 class="h3 mb-0 text-gray-800">Product & Food</h1>
             </div>
 
        <!-- ตัวอย่างและตำแหน่งของ card -->
@@ -53,7 +53,7 @@
             <!-- Content Row -->
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Product & Photographer</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Product & Food</h6>
             </div>
             <form action="billPhoto.php" method="POST">
             <div class="card-body">
@@ -89,7 +89,7 @@
                   </tfoot>
                   <tbody>
                     <?php
-                    table2(5);
+                    table2(7);
                     ?>
                   </tbody>
                 </table>
@@ -112,26 +112,26 @@
                   <thead>
                     <tr>
                       <th>ลำดับ</th>
-                      <th>รหัสช่างภาพ</th>
-                      <th>ช่างภาพ</th>
-                      <th>เรทราคา</th>
-                      <th>ระยะเวลาการจ้างงาน</th>
-                      <th>วันที่ต้องการถ่ายภาพ</th>
+                      <th>รหัส</th>
+                      <th>รายการอาหาร</th>
+                      <th>ราคา</th>
+                      <th>จำนวน</th>
+                      <th>หมายเหตุ</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
                       <th>ลำดับ</th>
-                      <th>รหัสช่างภาพ</th>
-                      <th>ช่างภาพ</th>
-                      <th>เรทราคา</th>
-                      <th>ระยะเวลาการจ้างงาน</th>
-                      <th>วันที่ต้องการถ่ายภาพ</th>
+                      <th>รหัส</th>
+                      <th>รายการอาหาร</th>
+                      <th>ราคา</th>
+                      <th>จำนวน</th>
+                      <th>หมายเหตุ</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <?php
-                    table2(6);
+                    table2(8);
                     ?>
                   </tbody>
                 </table>
