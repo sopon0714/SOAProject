@@ -80,7 +80,7 @@
                   <span>
                     <a href=" ./bill.php">
                       <button type="button" id="btn_green" class="btn btn-success">
-                        ตกลง
+                        ยืนยัน
                       </button>
                     </a>
                   </span>
@@ -107,10 +107,6 @@
                 <option value="c">ของตกแต่งภายนอกอาคาร</option>
               </select>
             </div>
-
-
-            <br /><br />
-
             </form>
 
             <div id="product-grid">
