@@ -136,7 +136,7 @@
                   </tbody>
                 </table>
                 <br/><br/>
-                <a href="./check.php"><button>Submit</button></a>
+                <a href="./billPhoto.php"><button>Submit</button></a>
               </div>
             </div>
             

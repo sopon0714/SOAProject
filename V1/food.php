@@ -55,7 +55,7 @@
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">Product & Food</h6>
             </div>
-            <form action="billPhoto.php" method="POST">
+            <form action="billFood.php" method="POST">
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -136,7 +136,7 @@
                   </tbody>
                 </table>
                 <br/><br/>
-                <a href="./check.php"><button>Submit</button></a>
+                <a href="./billFood.php"><button>Submit</button></a>
               </div>
             </div>
             
