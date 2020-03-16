@@ -43,35 +43,36 @@
                             <div class="col-xl-12 col-8 mb-4">
                                 <div class="card">
                                     <form class="user" action="Profile.php" method="post">
-                                        <div class="card-body">
-                                            <div class="row mb-4">
-                                                <div class="col-12">
-                                                    <span class="link-active " style="font-size: 50px; color:black;">WELCOME</span>
-                                                </div>
-                                            </div>
+                                        <div class="card-body" style="text-align:center;>
+                                            <div class=" row mb-4 ">
+                                                <div class=" col-12 " >
+                                                    <span class=" link-active " style=" font-size: 70px; color:black;">WELCOME</span>
+                                            <img src="./img/ddd1.jpg" width=“30” height=“50”>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
+                            </form>
                         </div>
-
                     </div>
-                    <!-- จบ -->
-
                 </div>
-                <!-- End of Main Content -->
-
 
             </div>
-            <!-- End of Content Wrapper -->
+            <!-- จบ -->
 
         </div>
-        <!-- End of Page Wrapper -->
+        <!-- End of Main Content -->
 
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 </body>
 <?php include_once("modal.php") ?>
 
