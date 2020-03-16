@@ -108,7 +108,7 @@
                                                             <button type="button" id="editCategory" class="btn btn-warning btn-sm tt " title='แก้ไขหมวดหมู่'>
                                                                 <i class="fas fa-edit"></i>
                                                             </button>
-                                                            <button type="button" id="btn_alt" class="btn btn-danger btn-sm tt " title='ลบหมวดหมู่'>
+                                                            <button type="button" id="del_btn" class="btn btn-danger btn-sm tt " title='ลบหมวดหมู่'>
                                                                 <i class="far fa-trash-alt"></i>
                                                             </button>
 
@@ -170,14 +170,6 @@
                         </div>
                     </div>
 
-
-
-
-
-
-
-
-
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-success" type="submit">บันทึก</button>
@@ -233,6 +225,8 @@
 </body>
 
 </html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script>
     $(document).ready(function() {
 
@@ -242,12 +236,35 @@
         $('#editCategory').click(function() {
             $("#modalEditCategory").modal();
         });
-    });
-    $(document).ready(function() {
         console.log("ready!");
         $("#addCategory").on('click', function() {
             $("#modalAddCategory").modal('show');
         });
         $('[data-toggle="tooltip"]').tooltip();
+        $('#del_btn').click(function() {
+            swal({
+                    title: "คุณต้องการลบ",
+                    text: "ดอกไม้หรือไม่ ?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        swal("ลบรายการสำเร็จเรียบร้อยแล้ว", {
+                            icon: "success",
+                            buttons: false
+                        });
+                        // delete_1(uid);
+                        setTimeout(function() {
+                            location.reload();
+                        }, 1500);
+                    } else {
+                        swal("การลบไม่สำเร็จ");
+                    }
+                });
+        });
+
+
     });
 </script>
