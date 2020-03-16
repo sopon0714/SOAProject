@@ -120,6 +120,36 @@
             </div>
           </div>
 
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">ยอดที่ต้องชำระ</h6>
+            </div>
+            <div id="product-grid">
+              <!-- <div class="txt-heading"><h3>ข้อมูลการเช่าสินค้า<h3></div><br/> -->
+              <div class="customer-data">
+
+                <!-- <div class="customer-title">โปรดกรอกข้อมูล</div><br/> -->
+                <div class="modal-body" id="addModalBody">
+                  <div class="container">
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="name">ราคารวมทั้งหมด : 1900 บาท</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+
+
+
+
+
+
 
           <div class="card shadow mb-4">
             <div class="card">
@@ -138,6 +168,7 @@
                         <th>รหัสสินค้า</th>
                         <th>รายการ</th>
                         <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
+                        <th>ราคา</th>
                       </tr>
                     </thead>
                     <tfoot>
@@ -147,6 +178,7 @@
                         <th>รหัสสินค้า</th>
                         <th>รายการ</th>
                         <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
+                        <th>ราคา</th>
                       </tr>
                     </tfoot>
                     <tbody>
