@@ -211,7 +211,7 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
     if ($column == 7) {
         ?>
             <tr>
-            <td><?php echo "1"; ?></td>
+                <td><?php echo "1"; ?></td>
                 <td><?php echo "000001"; ?></td>
                 <td><?php echo "แจกัน</br>"."ดอกไม้</br>"."ผ้าม่าน</br>"; ?></td>
                 <td><?php echo "1050"; ?></td>
@@ -259,8 +259,7 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
     if ($column == 11) {
         ?>
             <tr>
-            <td><?php echo "1"; ?></td>
-            <td><?php echo "1"; ?></td>
+                <td><?php echo "1"; ?></td>
                 <td><?php echo "000001"; ?></td>
                 <td><?php echo "แจกัน</br>"."ดอกไม้</br>"."ผ้าม่าน</br>"; ?></td>
                 <td><?php echo "1050"; ?></td>
