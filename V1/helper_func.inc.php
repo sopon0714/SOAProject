@@ -260,6 +260,7 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
             <td><?php echo "แจกัน</br>" . "ดอกไม้</br>" . "ผ้าม่าน</br>"; ?></td>
             <td><?php echo "1050"; ?></td>
             <td><?php echo "1"; ?></td>
+            <td><?php echo "1050"; ?></td>
             <td><?php echo "ต้องการดอกไม้สีขาว"; ?></td>
         </tr>
     <?php
@@ -284,6 +285,7 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
             <td><?php echo "แจกัน</br>" . "ดอกไม้</br>" . "ผ้าม่าน</br>"; ?></td>
             <td><?php echo "1050"; ?></td>
             <td><?php echo "1"; ?></td>
+            <td><?php echo "1050"; ?></td>
             <td><?php echo "ต้องการดอกไม้สีแดง"; ?></td>
         </tr>
     <?php
@@ -296,6 +298,7 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
             <td><?php echo "ต้มยำกุ้ง"; ?></td>
             <td><?php echo "350"; ?></td>
             <td><?php echo "5"; ?></td>
+            <td><?php echo "1750"; ?></td>
             <td><?php echo "รสชาติจัดจ้าน"; ?></td>
         </tr>
 <?php

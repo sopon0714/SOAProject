@@ -165,16 +165,6 @@
                         <th>ราคารวม</th>
                       </tr>
                     </thead>
-                    <tfoot>
-                      <tr>
-                        <th>ลำดับ</th>
-                        <th>ภาพสินค้า</th>
-                        <th>รหัสสินค้า</th>
-                        <th>รายการ</th>
-                        <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
-                        <th>ราคารวม</th>
-                      </tr>
-                    </tfoot>
                     <tbody>
                       <?php
                       //getProducts();
