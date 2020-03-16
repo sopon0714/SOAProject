@@ -110,7 +110,7 @@
 
               <select id="category">
                 <option value="a">ดอกไม้ประดับ</option>
-                <option value="b">ของตกแต่งภายในอาคาร</option>
+                <option value="b" selected>ของตกแต่งภายในอาคาร</option>
                 <option value="c">ของตกแต่งภายนอกอาคาร</option>
               </select>
             </div>
