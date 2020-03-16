@@ -126,7 +126,7 @@
                                                             <button type="button" id="editStock" class="btn btn-warning btn-sm tt " title='แก้ไขสินค้า'>
                                                                 <i class="fas fa-edit"></i>
                                                             </button>
-                                                            <button type="button" onclick="delfunction()" id="delete" class="btn btn-danger btn-sm btndel" data-toggle="tooltip" title="" data-original-title="ลบสินค้า">
+                                                            <button type="button" id="del_btn" class="btn btn-danger btn-sm btndel" data-toggle="tooltip" title="" data-original-title="ลบสินค้า">
                                                                 <i class="far fa-trash-alt"></i>
                                                             </button>
 
@@ -369,6 +369,7 @@
 </body>
 
 </html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
     $(document).ready(function() {
 
@@ -377,6 +378,29 @@
         });
         $('#editStock').click(function() {
             $("#modelEditStock").modal();
+        });
+        $('#del_btn').click(function() {
+            swal({
+                    title: "คุณต้องการลบ",
+                    text: "ดอกมะลิ หรือไม่ ?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        swal("ลบรายการสำเร็จเรียบร้อยแล้ว", {
+                            icon: "success",
+                            buttons: false
+                        });
+                        // delete_1(uid);
+                        setTimeout(function() {
+                            location.reload();
+                        }, 1500);
+                    } else {
+                        swal("การลบไม่สำเร็จ");
+                    }
+                });
         });
     });
     $(document).ready(function() {

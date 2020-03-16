@@ -102,7 +102,7 @@
                                                             <button type="button" id="editHistory" class="btn btn-warning btn-sm tt " title='แก้ไขรายละเอียด'>
                                                                 <i class="fas fa-edit"></i>
                                                             </button>
-                                                            <button type="button" id="btn_alt" class="btn btn-danger btn-sm tt " title='ลบข้อมูลการเช่า'>
+                                                            <button type="button" id="del_btn" class="btn btn-danger btn-sm tt " title='ลบข้อมูลการเช่า'>
                                                                 <i class="far fa-trash-alt"></i>
                                                             </button>
 
@@ -303,6 +303,8 @@
 </body>
 
 </html>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script>
     $(document).ready(function() {
 
@@ -315,6 +317,29 @@
 
         $('#editHistory').click(function() {
             $("#modelEditHistory").modal();
+        });
+        $('#del_btn').click(function() {
+            swal({
+                    title: "คุณต้องการลบ",
+                    text: "RD00001 หรือไม่ ?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        swal("ลบรายการสำเร็จเรียบร้อยแล้ว", {
+                            icon: "success",
+                            buttons: false
+                        });
+                        // delete_1(uid);
+                        setTimeout(function() {
+                            location.reload();
+                        }, 1500);
+                    } else {
+                        swal("การลบไม่สำเร็จ");
+                    }
+                });
         });
     });
 </script>
