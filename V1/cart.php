@@ -77,6 +77,7 @@
                         //$products_list = getProducts();
                         //@var_dump($products_list);
                         table2(4);
+                        // table2(13);
                         ?>
                       </tbody>
                     </table>
@@ -120,7 +121,6 @@
               <div class="txt-heading">
                 <h2>Products<h2>
               </div>
-
               <div class="product-item">
                 <form>
                   <div class="product-image">
@@ -137,6 +137,7 @@
                 </form>
               </div>
             </div>
+
           </div>
         </div>
 

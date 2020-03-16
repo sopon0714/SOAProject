@@ -301,6 +301,25 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
             <td><?php echo "1750"; ?></td>
             <td><?php echo "รสชาติจัดจ้าน"; ?></td>
         </tr>
+    <?php
+    }
+    if ($column == 13) {
+    ?>
+        <tr>
+            <td><?php echo "2"; ?></td>
+            <td><?php echo "<img src=\"./img/q62ir9.jpg\" width= \"70\" height=\"80\" >" ?></td>
+            <td><?php echo "000124"; ?></td>
+            <td><?php echo "ดอกไม้"; ?></td>
+            <td><?php echo "5"; ?></td>
+            <td><?php echo "5"; ?></td>
+            <td><?php echo "25"; ?></td>
+            <td style="text-align:center;">
+                <button type="button" onclick="delfunction()" id="delete" class="btn btn-danger btn-sm btndel" data-toggle="tooltip" title="" data-original-title="ยกเลิก">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+
+            </td>
+        </tr>
 <?php
     }
 }
