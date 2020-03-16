@@ -43,36 +43,40 @@
                             <div class="col-xl-12 col-8 mb-4">
                                 <div class="card">
                                     <form class="user" action="Profile.php" method="post">
-                                        <div class="card-body" style="text-align:center;>
+                                        <div class="card-body" style="text-align:center;">
                                             <div class=" row mb-4 ">
-                                                <div class=" col-12 " >
-                                                    <span class=" link-active " style=" font-size: 70px; color:black;">WELCOME</span>
-                                            <!-- <img src="./img/ddd1.jpg"> -->
+                                                <div class=" col-12 ">
+                                                    <span class=" link-active " style=" font-size: 70px; color:pink;">WELCOME</span>
+                                                    <br>
+                                                    <img src="./img/ddd1.jpg" width="40%" height="100%">
+                                                    <br>
+                                                    <br>
+                                                    <span style=" font-size: 25px; color:black;">ร้านเช่าอุปกรณ์ตกแต่ง </span>
+                                                </div>
+                                            </div>
                                         </div>
+                                    </form>
                                 </div>
                             </div>
-                            </form>
                         </div>
+
                     </div>
+                    <!-- จบ -->
+
                 </div>
+                <!-- End of Main Content -->
+
 
             </div>
-            <!-- จบ -->
+            <!-- End of Content Wrapper -->
 
         </div>
-        <!-- End of Main Content -->
+        <!-- End of Page Wrapper -->
 
-
-    </div>
-    <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
 </body>
 <?php include_once("modal.php") ?>
 
