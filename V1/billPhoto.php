@@ -112,7 +112,7 @@
                   </tfoot>
                   <tbody>
                     <?php
-                    table2(5);
+                    table2(9);
                     ?>
                   </tbody>
                 </table>
@@ -154,12 +154,12 @@
                   </tfoot>
                   <tbody>
                     <?php
-                    table2(6);
+                    table2(10);
                     ?>
                   </tbody>
                 </table>
                 <br/><br/>
-                <a href=""><button>Submit</button></a>
+                <a href="photographer.php"><button>Submit</button></a>
               </div>
             </div>
             

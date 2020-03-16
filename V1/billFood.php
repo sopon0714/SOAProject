@@ -112,7 +112,7 @@
                   </tfoot>
                   <tbody>
                     <?php
-                    table2(7);
+                    table2(11);
                     ?>
                   </tbody>
                 </table>
@@ -154,7 +154,7 @@
                   </tfoot>
                   <tbody>
                     <?php
-                    table2(8);
+                    table2(12);
                     ?>
                   </tbody>
                 </table>
