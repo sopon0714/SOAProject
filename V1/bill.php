@@ -160,8 +160,9 @@
                         <th>ภาพสินค้า</th>
                         <th>รหัสสินค้า</th>
                         <th>รายการ</th>
-                        <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
+                        <th>จำนวน</th>
                         <th>ราคา</th>
+                        <th>ราคารวม</th>
                       </tr>
                     </thead>
                     <tfoot>
@@ -171,7 +172,7 @@
                         <th>รหัสสินค้า</th>
                         <th>รายการ</th>
                         <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
-                        <th>ราคา</th>
+                        <th>ราคารวม</th>
                       </tr>
                     </tfoot>
                     <tbody>
@@ -179,7 +180,7 @@
                       //getProducts();
                       //$products_list = getProducts();
                       //@var_dump($products_list);
-                      table2(4);
+                      table2(3);
                       ?>
                     </tbody>
                   </table>

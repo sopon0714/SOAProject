@@ -169,6 +169,19 @@ function PaySelf()
 
 function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
 {
+    if ($column == 3) {
+        ?>
+            <tr>
+                <td><?php echo "1"; ?></td>
+                <td><?php echo "<img src=\"./img/a.jpg\" width= \"70\" height=\"80\" >" ?></td>
+                <td><?php echo "000123"; ?></td>
+                <td><?php echo "ดอกไม้"; ?></td>
+                <td><?php echo "2"; ?></td>
+                <td><?php echo "5"; ?></td>
+                <td><?php echo "10"; ?></td>
+            </tr>
+        <?php
+        }
     if ($column == 4) {
     ?>
         <tr>
