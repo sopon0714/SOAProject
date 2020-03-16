@@ -102,17 +102,7 @@
                         <input type="text" name="e-mail">
                       </div>
                     </div>
-                    <div class="row mb-3">
-                      <div class="col-xl-5 col-2 text-right ">
-                        <span>
-                          <a href=" ./food.php">
-                            <button type="button" id="btn_green" class="btn btn-success">
-                              ยืนยัน
-                            </button>
-                          </a>
-                        </span>
-                      </div>
-                    </div>
+          
                   </div>
 
                 </div>
@@ -203,6 +193,17 @@
                     <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
                 </div>
               </div>
+              <div class="row mb-3">
+                      <div class="col-xl-5 col-2 text-right ">
+                        <span>
+                          <a href=" ./food.php">
+                            <button type="button" id="btn_green" class="btn btn-success">
+                              ยืนยัน
+                            </button>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
             </form>
           </div>
         </div>
