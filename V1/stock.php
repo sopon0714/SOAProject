@@ -91,7 +91,7 @@
                                                         <th>หมวดหมู่</th>
                                                         <th>รหัสสินค้า</th>
                                                         <th>รายการ</th>
-                                                        <th>จำนวน</th>
+
                                                         <th>ราคาชิ้นละ(บาท)ต่อวัน</th>
                                                         <th>จัดการ</th>
                                                     </tr>
@@ -103,7 +103,7 @@
                                                         <th>หมวดหมู่</th>
                                                         <th>รหัสสินค้า</th>
                                                         <th>รายการ</th>
-                                                        <th>จำนวน</th>
+
                                                         <th>ราคาชิ้นละ(บาท)ต่อวัน</th>
                                                         <th>จัดการ</th>
                                                     </tr>
@@ -120,7 +120,7 @@
                                                         <td>ดอกไม้</td>
                                                         <td>001233</td>
                                                         <td>ดอกมะลิ</td>
-                                                        <td>150</td>
+
                                                         <td>5</td>
                                                         <td style="text-align:center;">
                                                             <button type="button" id="editStock" class="btn btn-warning btn-sm tt " title='แก้ไขสินค้า'>
@@ -141,7 +141,7 @@
                                                         <td>ธงลายการ์ตูน</td>
                                                         <td>00223</td>
                                                         <td>ธงลายเจ้าหญิง</td>
-                                                        <td>20</td>
+
                                                         <td>15</td>
                                                         <td style="text-align:center;">
                                                             <button type="button" id="editStock" class="btn btn-warning btn-sm tt " title='แก้ไขสินค้า'>
@@ -242,14 +242,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="row mb-3">
-                                        <div class="col-xl-3 col-12 text-right textreq">
-                                            <span>จำนวน:</span>
-                                        </div>
-                                        <div class="col-xl-9 col-12">
-                                            <td><input type="number" min="0" class="form-control" id="" name="" value=""></td>
-                                        </div>
-                                    </div>
+
 
                                     <div class="row mb-4">
                                         <div class="col-xl-3 col-12 text-right">
@@ -339,14 +332,6 @@
                                                 <option value="volvo">ดอกไม้</option>
                                                 <option value="saab">ธงลายการ์ตูน</option>
                                             </select>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-xl-3 col-12 text-right textreq">
-                                            <span>จำนวน:</span>
-                                        </div>
-                                        <div class="col-xl-9 col-12">
-                                            <td><input type="number" min="0" class="form-control" id="" name="" value="50"></td>
                                         </div>
                                     </div>
 
