@@ -169,14 +169,7 @@
                             <input type="text" class="form-control" id="" name="" value="" placeholder="กรุณากรอกหมวดหมู่" maxlength="100">
                         </div>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-xl-3 col-12 text-right">
-                            <span>จำนวน:</span>
-                        </div>
-                        <div class="col-xl-8 col-12">
-                            <td><input type="number" min="0" class="form-control" id="" name="" value=""></td>
-                        </div>
-                    </div>
+
 
 
 
@@ -213,14 +206,7 @@
                             <input type="text" class="form-control" id="" name="" value="" placeholder="ดอกไม้" maxlength="100">
                         </div>
                     </div>
-                    <div class="row mb-4">
-                        <div class="col-xl-3 col-12 text-right">
-                            <span>จำนวน:</span>
-                        </div>
-                        <div class="col-xl-8 col-12">
-                            <td><input type="number" min="0" class="form-control" id="" name="" value="" placeholder="20"></td>
-                        </div>
-                    </div>
+
 
 
 
