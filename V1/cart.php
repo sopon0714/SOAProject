@@ -55,28 +55,31 @@
             <form action="bill.php" method="POST">
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <center>
+                    <table class="table table-bordered" id="dataTable2" style="text-align:center;" width="80%" cellspacing="0">
 
-                    <thead>
-                      <tr>
-                        <th>ลำดับ</th>
-                        <th>ภาพสินค้า</th>
-                        <th>รหัสสินค้า</th>
-                        <th>รายการ</th>
-                        <th>จำนวนอุปกรณ์ที่ต้องการเช่า</th>
-                        <th>ราคา</th>
-                      </tr>
-                    </thead>
+                      <thead>
+                        <tr>
+                          <th>ลำดับ</th>
+                          <th>ภาพสินค้า</th>
+                          <th>รหัสสินค้า</th>
+                          <th>รายการ</th>
+                          <th>จำนวน</th>
+                          <th>ราคาเช่าต่อชิ้น(บาท)</th>
+                          <th>ราคาเช่ารวม(บาท)</th>
+                        </tr>
+                      </thead>
 
-                    <tbody>
-                      <?php
-                      //getProducts();
-                      //$products_list = getProducts();
-                      //@var_dump($products_list);
-                      table2(4);
-                      ?>
-                    </tbody>
-                  </table>
+                      <tbody>
+                        <?php
+                        //getProducts();
+                        //$products_list = getProducts();
+                        //@var_dump($products_list);
+                        table2(4);
+                        ?>
+                      </tbody>
+                    </table>
+                  </center>
                   <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
                   <span>
                     <a href=" ./bill.php">
@@ -111,11 +114,11 @@
             </form>
 
             <div id="product-grid">
-              <div class="txt-heading" style="text-align:center;">
+              <div class="txt-heading">
                 <h2>Products<h2>
               </div>
 
-              <div class="product-item" style="text-align:center;">
+              <div class="product-item">
                 <form>
                   <div class="product-image">
                     <img src="./img/a.jpg" width="220" height="230" alt=images>
