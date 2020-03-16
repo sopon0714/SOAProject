@@ -67,6 +67,7 @@
                           <th>จำนวน</th>
                           <th>ราคาเช่าต่อชิ้น(บาท)</th>
                           <th>ราคาเช่ารวม(บาท)</th>
+                          <th>การจัดการ</th>
                         </tr>
                       </thead>
 
@@ -82,11 +83,13 @@
                   </center>
                   <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
                   <span>
+                    <h4 style="text-align: right"> ราคารวมทั้งหมด 150 (บาท)</h4>
                     <a href=" ./bill.php">
                       <button type="button" id="btn_green" class="btn btn-success">
                         ยืนยัน
                       </button>
                     </a>
+
                   </span>
 
                 </div>

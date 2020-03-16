@@ -179,6 +179,12 @@ function table2(int $column, $border = 1, $cellpadding = 1, $cellspacing = 1)
             <td><?php echo "2"; ?></td>
             <td><?php echo "5"; ?></td>
             <td><?php echo "10"; ?></td>
+            <td style="text-align:center;">
+                <button type="button" onclick="delfunction()" id="delete" class="btn btn-danger btn-sm btndel" data-toggle="tooltip" title="" data-original-title="ยกเลิก">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+
+            </td>
         </tr>
     <?php
     }

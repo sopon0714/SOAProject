@@ -127,7 +127,8 @@
                                                                 <i class="fas fa-edit"></i>
                                                             </button>
                                                             <button type="button" onclick="delfunction()" id="delete" class="btn btn-danger btn-sm btndel" data-toggle="tooltip" title="" data-original-title="ลบสินค้า">
-                                                                <i class="far fa-trash-alt"></i></button>
+                                                                <i class="far fa-trash-alt"></i>
+                                                            </button>
 
                                                         </td>
                                                     </tr>
