@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-         .text-gray-error {
-              color: #FF0000 !important;
-            }
+  .text-gray-error {
+    color: #FF0000 !important;
+  }
 
 
-        .bg-login-image2 {
-          background: url('http://my-test-11.slatic.net/p/97ceee6f68529341f4c149f274d254be.jpg');
-          background-position: center;
-          background-size: cover;
-            }
-         .bg-gradient-primary_222 {
-             background-color: #FFB6C1;
-             background-image: linear-gradient(180deg, #FFB6C1 40%, #63B8FF 100%);
-             background-size: cover;
-         }
+  .bg-login-image2 {
+    background: url('https://www.brideweddingmagazine.com/wp-content/uploads/2018/08/%E0%B8%95%E0%B8%81%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%871.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-gradient-primary_222 {
+    background-color: #FFB6C1;
+    background-image: linear-gradient(180deg, #FFB6C1 40%, #63B8FF 100%);
+    background-size: cover;
+  }
 </style>
 <?php
-  require_once('helper_func.inc.php');
+require_once('helper_func.inc.php');
 ?>
+
 <head>
 
   <meta charset="utf-8">
@@ -40,7 +42,7 @@
 </head>
 
 <body class="bg-gradient-primary_222">
- 
+
   <div class="container">
 
     <!-- Outer Row -->
@@ -58,34 +60,34 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome to Accessories Shop</h1>
                   </div>
-                  <form class="user" action = "confirmLogin.php" method = "post">
-                  <!-- ใส่ username  -->
+                  <form class="user" action="confirmLogin.php" method="post">
+                    <!-- ใส่ username  -->
                     <!-- <div class="form-group">
                       <input name = "username" type="text" class="form-control form-control-user" id="exampleInputUsername" placeholder="Enter your username...">
                     </div> -->
-                  <!-- ใส่ Password  -->
+                    <!-- ใส่ Password  -->
                     <div class="form-group">
-                      <input  name = "password" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                      <input name="password" type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
-                <!-- กด Login   -->
-                <?php
-                if(isset($_GET["error"])){?>
-                  <div class="text-center">
-                    <h6 class = "text-gray-error">Invalid user</h6>
-                  </div>
-                <?php
-                }
-                ?>
-               
-                <button type="submit" class="btn btn-primary btn-user btn-block">
-                  Login 
-                </button>
+                    <!-- กด Login   -->
+                    <?php
+                    if (isset($_GET["error"])) { ?>
+                      <div class="text-center">
+                        <h6 class="text-gray-error">Invalid user</h6>
+                      </div>
+                    <?php
+                    }
+                    ?>
+
+                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                      Login
+                    </button>
                     <!-- <a href="index.html" class="btn btn-primary btn-user btn-block">
                       Login
                     </a> -->
                     <hr>
                   </form>
-                <!-- ไปหน้าสมัครสมาชิก -->
+                  <!-- ไปหน้าสมัครสมาชิก -->
                   <!-- <div class="text-center">
                     <a class="small" href="register.php">Create an Account!</a>
                   </div> -->

@@ -143,7 +143,7 @@
           </div>
 
 
-          
+
           <div class="card shadow mb-4">
             <div class="card">
               <div class="card-header card-bg ">
@@ -154,30 +154,23 @@
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <colgroup>
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>ลำดับ</th>
-                      <th>รหัสสินค้า</th>
-                      <th>สินค้า</th>
-                      <th>ราคา/set</th>
-                      <th>จำนวน (set)</th>
-                      <th>ราคารวม</th>
-                      <th>หมายเหตุ</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php
-                    table2(11);
-                    ?>
-                  </tbody>
+
+                    <thead>
+                      <tr>
+                        <th>ลำดับ</th>
+                        <th>รหัสสินค้า</th>
+                        <th>สินค้า</th>
+                        <th>ราคา/set</th>
+                        <th>จำนวน (set)</th>
+                        <th>ราคารวม</th>
+                        <th>หมายเหตุ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      table2(11);
+                      ?>
+                    </tbody>
                   </table>
                   <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
                 </div>
@@ -187,33 +180,53 @@
             <form action="billFood.php" method="POST">
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <colgroup>
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                        <col  width="100">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>ลำดับ</th>
-                      <th>รหัส</th>
-                      <th>รายการอาหาร</th>
-                      <th>ราคา</th>
-                      <th>จำนวน</th>
-                      <th>ราคารวม</th>
-                      <th>หมายเหตุ</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php
-                    table2(12);
-                    ?>
-                  </tbody>
-                  </table>
-                  <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
+                  <<<<<<< HEAD <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+                    <thead>
+                      <tr>
+                        <th>ลำดับ</th>
+                        <th>รหัสสินค้า</th>
+                        <th>รายการอาหาร</th>
+                        <th>ราคา</th>
+                        <th>จำนวน</th>
+                        <th>ราคารวม</th>
+                        <th>หมายเหตุ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                      table2(12);
+                      ?>
+                    </tbody>
+                    =======
+                    <table class="table table-bordered" id="d" width="100%" cellspacing="0">
+                      <colgroup>
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>ลำดับ</th>
+                          <th>รหัส</th>
+                          <th>รายการอาหาร</th>
+                          <th>ราคา</th>
+                          <th>จำนวน</th>
+                          <th>ราคารวม</th>
+                          <th>หมายเหตุ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                        table2(12);
+                        ?>
+                      </tbody>
+                      >>>>>>> 1b92c9637c5654f2db0173059b50df9f7af28ca6
+                    </table>
+                    <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
                 </div>
               </div>
             </form>
