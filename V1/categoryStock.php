@@ -80,7 +80,7 @@
                                 <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4">
                                     <div class="row center">
                                         <div class="col-sm-12">
-                                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <table class="table table-bordered" id="d" width="100%" cellspacing="0">
 
                                                 <thead>
                                                     <tr>

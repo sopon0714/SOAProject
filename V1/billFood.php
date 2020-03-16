@@ -180,7 +180,7 @@
             <form action="billFood.php" method="POST">
               <div class="card-body">
                 <div class="table-responsive">
-                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <<<<<<< HEAD <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 
                     <thead>
                       <tr>
@@ -198,8 +198,35 @@
                       table2(12);
                       ?>
                     </tbody>
-                  </table>
-                  <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
+                    =======
+                    <table class="table table-bordered" id="d" width="100%" cellspacing="0">
+                      <colgroup>
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                        <col width="100">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>ลำดับ</th>
+                          <th>รหัส</th>
+                          <th>รายการอาหาร</th>
+                          <th>ราคา</th>
+                          <th>จำนวน</th>
+                          <th>ราคารวม</th>
+                          <th>หมายเหตุ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <?php
+                        table2(12);
+                        ?>
+                      </tbody>
+                      >>>>>>> 1b92c9637c5654f2db0173059b50df9f7af28ca6
+                    </table>
+                    <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
                 </div>
               </div>
             </form>
