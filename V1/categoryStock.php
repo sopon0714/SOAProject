@@ -181,7 +181,7 @@
     <div id="modalEditCategory" class="modal fade">
         <form class="modal-dialog modal-lg ">
             <div class="modal-content">
-                <div class="modal-header" style="background-color:#3E49BB">
+                <div class="modal-header" style="background-color:#eecc0b">
                     <h4 class="modal-title" style="color:white">แก้ไขหมวดหมู่</h4>
                 </div>
 

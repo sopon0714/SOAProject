@@ -272,7 +272,7 @@
     <div id="modelEditStock" class="modal fade">
         <form class="modal-dialog modal-lg ">
             <div class="modal-content">
-                <div class="modal-header" style="background-color:#3E49BB">
+                <div class="modal-header" style="background-color:#eecc0b">
                     <h4 class="modal-title" style="color:white">แก้ไขข้อมูลสินค้า</h4>
                 </div>
                 <div class="modal-body" id="addModalBody">
