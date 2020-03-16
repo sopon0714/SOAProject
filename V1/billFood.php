@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-  <?php include "link.php"?>
-<title>Bill</title>
+  <?php include "link.php" ?>
+  <title>Bill</title>
 </head>
 
 <body id="page-top">
-  <div id="wrapper" >
+  <div id="wrapper">
 
     <!-- อันนี้ไว้เรียกใช้แท็บข้างๆๆ -->
-      <?php include "layout_user.php" ?>
-      <?php include "helper_func.inc.php" ?>
+    <?php include "layout_user.php" ?>
+    <?php include "helper_func.inc.php" ?>
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
-      <div id="content" >
+      <div id="content">
 
         <!-- อันนี้ไว้เรียกใช้แท็บบน -->
         <?php include "Topbar.php" ?>
@@ -26,13 +26,13 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
-            <!-- Page Heading -->
-            <div bgcolor= “green” class="d-sm-flex align-items-center justify-content-between mb-4">
-              <h1 class="h3 mb-0 text-gray-800">สินค้าทั้งหมดที่ลูกค้าต้องการ</h1>
-            </div>
+          <!-- Page Heading -->
+          <!-- <div bgcolor=“green” class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">สินค้าทั้งหมดที่ลูกค้าต้องการ</h1>
+          </div> -->
 
-       <!-- ตัวอย่างและตำแหน่งของ card -->
-            <!-- <div class="row">
+          <!-- ตัวอย่างและตำแหน่งของ card -->
+          <!-- <div class="row">
               <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-left-primary shadow h-100 py-2">
                   <div class="card-body">
@@ -50,38 +50,110 @@
               </div>
             </div> -->
 
-            <!-- Content Row -->
-            <div class="card shadow mb-4">
+          <!-- Content Row -->
+          <div class="card shadow mb-4">
             <div class="card-header py-3">
               <h6 class="m-0 font-weight-bold text-primary">โปรดกรอกข้อมูล</h6>
             </div>
             <div id="product-grid">
-                <!-- <div class="txt-heading"><h3>ข้อมูลการเช่าสินค้า<h3></div><br/> -->
-                <div class="customer-data">
-                  <form>
-                          <!-- <div class="customer-title">โปรดกรอกข้อมูล</div><br/> -->
-                          <div class="bill-action">
-                                <label for="name">ชื่อ-สกุล : </label>
-                                <input type="text" name="name"><br/>
-                                <label for="day">วันที่เช่าสินค้า : </label>
-                                <input type="date" id="myDate" name="myDate" value=""><br/>
-                                <label for="day">ระยะเวลาการเช่าสินค้า : </label>
-                                <input type="number"class="customer-day" id="day" name="day" min="1" max="30" name="quantity" value="1" size="2"><br/>
-                                <label for="day">เบอร์โทร : </label>
-                                <input type="text" name="tel"><br/>
-                                <label for="day">e-mail : </label>
-                                <input type="text" name="e-mail"><br/>
-                                <input type="submit" value="submit" class="btnAddAction">
-                          </div>
-                      
-                  </form>
-                </div>
-            </div>
+              <!-- <div class="txt-heading"><h3>ข้อมูลการเช่าสินค้า<h3></div><br/> -->
+              <div class="customer-data">
 
-            <form action="billFood.php" method="POST">
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <!-- <div class="customer-title">โปรดกรอกข้อมูล</div><br/> -->
+                <div class="modal-body" id="addModalBody">
+                  <div class="container">
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="name">ชื่อ-สกุล : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="text" name="name">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="day">วันที่เช่าสินค้า : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="date" id="myDate" name="myDate" value="">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="day">ระยะเวลาการเช่าสินค้า : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="number" class="customer-day" id="day" name="day" min="1" max="30" name="quantity" value="1" size="2">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="day">เบอร์โทร : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="text" name="tel">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="day">e-mail : </label>
+                      </div>
+                      <div class="col-xl-6 col-6 ">
+                        <input type="text" name="e-mail">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-xl-5 col-2 text-right ">
+                        <span>
+                          <a href=" ./food.php">
+                            <button type="button" id="btn_green" class="btn btn-success">
+                              ยืนยัน
+                            </button>
+                          </a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">ยอดที่ต้องชำระ</h6>
+            </div>
+            <div id="product-grid">
+              <!-- <div class="txt-heading"><h3>ข้อมูลการเช่าสินค้า<h3></div><br/> -->
+              <div class="customer-data">
+
+                <!-- <div class="customer-title">โปรดกรอกข้อมูล</div><br/> -->
+                <div class="modal-body" id="addModalBody">
+                  <div class="container">
+                    <div class="row mb-3">
+                      <div class="col-xl-4 col-2 text-right ">
+                        <label for="name">ราคารวมทั้งหมด : 2800 บาท</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+          <div class="card shadow mb-4">
+            <div class="card">
+              <div class="card-header card-bg ">
+                <span class="m-0 font-weight-bold text-primary">สรุปรายการ</span>
+              </div>
+            </div>
+            <form action="billFood.php.php" method="POST">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <colgroup>
                         <col  width="100">
                         <col  width="100">
@@ -115,15 +187,16 @@
                     table2(11);
                     ?>
                   </tbody>
-                </table>
+                  </table>
+                  <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
+                </div>
               </div>
-            </div>
-            
-            <br/><br/>
-            
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            </form>
+
+            <form action="billFood.php" method="POST">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <colgroup>
                         <col  width="100">
                         <col  width="100">
@@ -157,27 +230,22 @@
                     table2(12);
                     ?>
                   </tbody>
-                </table>
-                <br/><br/>
-                <a href=""><button>Submit</button></a>
+                  </table>
+                  <!-- <img src="./img/a.jpg" width= “30” height=“50”> -->
+                </div>
               </div>
-            </div>
-            
-            <br/><br/>
-          </form>
-
-            
-
+            </form>
           </div>
         </div>
-        <!-- /.container-fluid -->
-
       </div>
-      <!-- End of Main Content -->
-
+      <!-- /.container-fluid -->
 
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- End of Main Content -->
+
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->
@@ -187,8 +255,8 @@
     <i class="fas fa-angle-up"></i>
   </a>
 
-  
- 
+
+
 </body>
 
 </html>
