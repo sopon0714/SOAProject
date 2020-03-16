@@ -47,7 +47,7 @@
                                             <div class=" row mb-4 ">
                                                 <div class=" col-12 " >
                                                     <span class=" link-active " style=" font-size: 70px; color:black;">WELCOME</span>
-                                            <img src="./img/ddd1.jpg" width=“30” height=“50”>
+                                            <!-- <img src="./img/ddd1.jpg"> -->
                                         </div>
                                 </div>
                             </div>
