@@ -53,7 +53,7 @@
           <!-- Content Row -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">สินค้าทั้งหมดที่ลูกค้าต้องการ</h6>
+              <h6 class="m-0 font-weight-bold text-primary">โปรดกรอกข้อมูล</h6>
             </div>
             <div id="product-grid">
               <!-- <div class="txt-heading"><h3>ข้อมูลการเช่าสินค้า<h3></div><br/> -->
