@@ -56,7 +56,7 @@
               <div class="card-body">
                 <div class="table-responsive">
                   <center>
-                    <table class="table table-bordered" id="dataTable2" style="text-align:center;" width="80%" cellspacing="0">
+                    <table class="table table-bordered" id="d" style="text-align:center;" width="80%" cellspacing="0">
 
                       <thead>
                         <tr>
