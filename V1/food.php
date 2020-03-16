@@ -136,7 +136,11 @@
                   </tbody>
                 </table>
                 <br/><br/>
-                <a href="./billFood.php"><button>Submit</button></a>
+                <a href="./billFood.php">
+                    <button type="button" id="btn_green" class="btn btn-success">
+                              ยืนยัน
+                    </button>
+                </a>
               </div>
             </div>
             

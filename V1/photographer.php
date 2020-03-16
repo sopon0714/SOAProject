@@ -53,7 +53,7 @@
             <!-- Content Row -->
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Product & Photographer</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Product</h6>
             </div>
             <form action="billPhoto.php" method="POST">
             <div class="card-body">
@@ -97,6 +97,15 @@
             </div>
             
             <br/><br/>
+          
+            </div>
+
+          <div class="card shadow mb-4">
+          <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Photographer</h6>
+            </div>
+            
+            <br/><br/>
             
             <div class="card-body">
               <div class="table-responsive">
@@ -136,12 +145,19 @@
                   </tbody>
                 </table>
                 <br/><br/>
-                <a href="./billPhoto.php"><button>Submit</button></a>
+                <a href="./billPhoto.php">
+                    <button type="button" id="btn_green" class="btn btn-success">
+                              ยืนยัน
+                    </button>
+                </a>
               </div>
             </div>
             
             <br/><br/>
+            
           </form>
+
+
 
           </div>
         </div>
